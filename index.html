@@ -1,0 +1,99 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- main style sheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<!-- container -->
+<div class="container">
+  
+  <!-- 1. title & 2. description -->
+  <header id="header">
+    <h1 id="title">Reading Habits Survey Form</h1>
+  <p id="description" class="description-text-center">To get an insight on how people go about the process of finding and reading books</p>
+  </header>
+  
+  <!-- 3. survery-form -->
+  <form id="survey-form">
+    <div class="group-form-elements">
+    
+      <!-- 4. id = name -->
+      <label id="name-label" for="name"> Name </label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name" required />
+      
+      <!-- 5. id = email & 6. email validation -->
+      <label id="email-label" for="email"> Email ID </label>
+      <input type="email" id="email" class="form-control" placeholder="Enter your email ID" required>
+      
+      <!-- 7. id = number & 8. numbers only validation & 9. min/max validation -->
+      <label id="number-label" for="age"> Age </label>
+      <input type="number" id="number" class="form-control" placeholder="Enter your age" min="1" max="100" required>
+     
+      <!-- 12. dropdown -->
+      <label id="dropdown-label" for="dropdown">Choose which suits you best </label>
+      <select id="dropdown" class="form-control">
+        <option diable selected value>Select your current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Part Time Job</option>
+        <option value="preferNo">Prefer not to say</option>
+      </select>
+      
+      <!-- 13. radio button options -->
+      <label id="radio" for="radio">Which genre do you prefer the most?</label>
+      <label>
+        <input type="radio" name="radio"  value="drama" class="input-radio-button" checked/> Drama
+      </label>
+       <label>
+        <input type="radio" name="radio"  value="fiction" class="input-radio-button" /> Fiction
+      </label>
+      <label>
+        <input type="radio" name="radio"  value="non-fiction" class="input-radio-button" /> Non-Fiction
+      </label>
+      <label>
+        <input type="radio" name="radio"  value="poetry" class="input-radio-button" /> Poetry
+      </label>
+      
+      <!-- 14. checkbox options -->
+        <label id="check" for="check">Which sub-genre do you prefer the most? </label>
+        <label>
+        <input type="checkbox" name="checkbox"  value="action" class="input-checkbox-button" /> Action
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox"  value="adventure" class="input-checkbox-button" /> Adventure
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox"  value="classics" class="input-checkbox-button" /> Classics
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox"  value="Comedy" class="input-checkbox-button" /> Comedy
+      </label>
+        <label>
+        <input type="checkbox" name="checkbox"  value="mystery" class="input-checkbox-button" /> Mystery
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox"  value="romance" class="input-checkbox-button" /> Romance
+      </label>
+      <label>
+        <input type="checkbox" name="checkbox"  value="thriller" class="input-checkbox-button" /> Thriller
+      </label>
+      
+      <!-- 15. text area for comments -->
+        <label id="textarea-label">If you prefer any additional genres not mentioned above, specify them here:</label>
+        <textarea id="textarea" class="form-control" placeholder="Mention any additional genres here"></textarea>
+        
+      <!-- 16. submit button -->
+       <button type="submit" id="submit" class="submit"> Submit </button>
+     
+  </form>
+  
+<div> 
